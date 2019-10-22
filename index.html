@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Yeon+Sung&display=swap" rel="stylesheet">
+	<title>부다페스트</title>
+	<style type="text/css">
+		body{background: black;}
+		section{position: relative;}
+		.cir{width: 2px; height: 2px; background: white; border-radius: 50%; position: absolute; }
+		.ligcir{width: 100px; height: 100px; background: white; border-radius: 50%; position: absolute; margin-top: 650px;}
+		.s2{position: absolute;width: 400px; top: 300px; z-index: 999; left: 130px;font-family: 'Nanum Myeongjo', serif;}
+		#buda{ width: 1250px; height: 1000px; position: relative;}
+		#budag{width: 100%; margin-top: 400px; z-index: -999;}
+		#moon{ width: 400px; right: 0; position: absolute; top: 0;}
+		#box{width: 280px; height: 300px; background: #525252; opacity: 0.5;  z-index: -999;position: absolute; padding-left: 10px; left: }
+		h1{margin: 15px; color: #666561;}
+		p{width: 280px; font-weight: 700; word-spacing: -1px; font-size: 11.5px; word-break: keep-all; color: #a8a8a8;line-height:2; z-index: 1000; position: absolute; margin: 15px;}
+
+		@keyframes w1{
+			from{left: 0px; opacity: 0;}
+			to{opacity: 1;}
+		}
+
+	</style>
+</head>
+<body>
+	<section class="s1" id="star">
+		<div id="circle" class="cir"></div>
+		<img src="giphy.gif" id="moon">
+	</section>
+
+	<section class="s2">
+		<div id="box"></div>
+		<h1>BUDAPEST</h1>
+		<p>"인생은 그다지 의미가 없으며,<br>나의 사랑과 당신의 사랑은 일치하지 않으며,<br> 세상의 모든 구원은 거짓임을 알게 된 어느 날.
+		<br><br>
+		문든 여행을 생각하고 있다는 사실만을 <br>희미한 즐거움으로 삼는다."
+		<br><br>
+		 우리는 사랑 아니면 여행이겠지
+		</p>
+	</section>
+
+	<section id="buda" class="s3">
+		<div id="light" class="ligcir"></div>
+			<img src="buda.png" id="budag">
+			
+		
+	</section>
+
+	<section  style="height: 50px; margin-top: 200px;">
+	
+	<div style=" font-weight: bold; text-align: center; margin:auto; color: white; font-size: 15px;">
+		Copyrightⓒ2019 Parksarah All rights reserved.</div>
+	</section>
+
+
+
+	<script type="text/javascript">
+			var state = "off";
+			moon.onclick = function(){
+				if(state == "off"){aa.play(); state = "on";
+			s2.style.opacity = "1";}
+			else{aa.pause(); astate="off";
+				a.style.opacity = "0.3";}
+
+		}
+
+
+		for(var i=0; i<80; i++){
+			var a = circle.cloneNode();
+			a.id = i;
+			a.style.left=Math.random()*1100 + "px";
+			a.style.top=Math.random()*400 + "px";
+			a.style.opacity=Math.random()*1;
+			var dd= Math.random()*3 + "px";
+			a.style.width=dd;
+			a.style.height=dd;
+			document.body.appendChild(a);
+		}
+		setInterval(aa,1000);
+		function aa(){
+		location.reload()}
+
+
+
+	for(var ii=0; ii<20; ii++){
+			var b = light.cloneNode();
+			b.id = ii;
+			b.style.left=Math.random()*1000 + "px";
+			b.style.top=Math.random()*400 + "px";
+			b.style.opacity=Math.random()*0.8;
+
+			var ff= Math.random()*100 + "px";
+			b.style.width=ff;
+			b.style.height=ff;
+			b.style.background=rgbmarke();
+			document.body.appendChild(b);
+		}
+
+		function rgbmarke() {
+		var a = Math.random()*250;
+		var b = Math.random()*100;
+		var c = Math.random()*0;
+		var d = "rgb(" + a + "," + b + "," + c + ")";
+		return d;}
+
+		setInterval(bb,1500);
+		function bb(){
+		location.reload()}
+
+
+
+	
+
+
+
+
+	
+
+	</script>
+</body>
+</html>
